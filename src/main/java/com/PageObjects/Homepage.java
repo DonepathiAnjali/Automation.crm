@@ -1,6 +1,7 @@
 package com.PageObjects;
 
-	import org.openqa.selenium.WebDriver;
+	import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
 	import org.openqa.selenium.WebElement;
 	import org.openqa.selenium.support.FindBy;
 	import org.openqa.selenium.support.PageFactory;
@@ -27,7 +28,9 @@ package com.PageObjects;
 	    public  AddToInventory inventory() throws Throwable
 	    {
 	    	Utils.moveToElement(Inventory);
-	    	AllInventory.click();	 
+	    	JavascriptExecutor js = (JavascriptExecutor) driver;
+	    
+	    	js.executeScript("arguments[0].click()",AllInventory);	 
 			return  new AddToInventory();
 	    }
 	    public void movestock()
