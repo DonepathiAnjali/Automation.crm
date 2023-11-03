@@ -34,48 +34,6 @@ public class Utils extends Testbase {
 			// TODO Auto-generated constructor stub
 		}
 		 
-		/** public  static  String[][]   getdatafromexcel(String sheetname) throws IOException
-		{
-			File file=new File("./src/main/java/com/testdata/TestDataA.xlsx");
-			FileInputStream fis=new FileInputStream(file);
-			XSSFWorkbook book=new XSSFWorkbook(fis);
-			XSSFSheet sheet=book.getSheet(sheetname);
-			int rownum=sheet.getPhysicalNumberOfRows();
-			int cellnum=sheet.getRow(1).getLastCellNum();
-			String[][] data =new  String[rownum-1][cellnum];
-			for(int i=0;i<rownum-1;i++)
-			{ 
-				for(int j=0;j<cellnum;j++)
-				{
-					DataFormatter format=new DataFormatter();
-					data[i][j]=format.formatCellValue(sheet.getRow(i+1).getCell(j));
-				}
-				
-			}
-			return data; 
-		} **/
-		 
-		 // @DataProvider(name="user")
-		/**public static Object[][] readDataFromExcel(String sheetname) throws IOException {
-		    FileInputStream fis = new FileInputStream("./src/main/java/com/testdata/TestDataA.xlsx");
-		    XSSFWorkbook workbook = new XSSFWorkbook(fis);
-		    XSSFSheet sheet = workbook.getSheet(sheetname);
-		    int numCols = sheet.getRow(0).getLastCellNum();  
-	        int rownum=sheet.getPhysicalNumberOfRows();
-		    Object[][] data = new Object[rownum-1][numCols];
-	for(int i=1;i<rownum;i++)
-	{
-		    XSSFRow dataRow = sheet.getRow(i);  
-		    for (int j = 0; j < numCols; j++) {
-		        XSSFCell cell = dataRow.getCell(j);
-		        DataFormatter format = new DataFormatter();
-		        data[i-1][j] = format.formatCellValue(cell);
-		    }
-
-		    
-		}
-	return data;
-		}**/
 		 public static Object[][] readDataFromExcel(String sheetname) throws IOException {
 			    FileInputStream fis = new FileInputStream("./src/main/java/com/testdata/AddInventory.xlsx");
 			    XSSFWorkbook workbook = new XSSFWorkbook(fis);
@@ -116,39 +74,39 @@ public class Utils extends Testbase {
 		//select by value
 	    public static void dropdown(WebElement wb,String value)
 	    {
-	    	Select s=new Select(wb);
-	    	s.selectByValue(value);
+	    	Select sel=new Select(wb);
+	    	sel.selectByValue(value);
 	    }
 	    //select by index
 	    public static void dropdown(WebElement wb,int index)
 	    {
-	    	Select s=new Select(wb);
-	    	s.selectByIndex(index);
+	    	Select sel=new Select(wb);
+	    	sel.selectByIndex(index);
 	    }
 	    //select y visible text
 	    public static void dropdownBy(String text,WebElement wb)
 	    {	
-	    	Select s=new Select(wb);
-	    	s.selectByVisibleText(text);
+	    	Select sel=new Select(wb);
+	    	sel.selectByVisibleText(text);
 	    }
 	    public static void moveToElement(WebElement wb)
 	    {
-	    	Actions act=new Actions(driver);
-	    	act.moveToElement(wb).click().perform();
+	    	Actions A=new Actions(driver);
+	    	A.moveToElement(wb).click().perform();
 	    }
 	   public static void waitForElement(WebElement wb)
 	   {
-		   WebDriverWait wait=new WebDriverWait(driver,25);
+		   WebDriverWait wait=new WebDriverWait(driver,30);
 		   wait.until(ExpectedConditions.elementToBeClickable(wb));
 		   
 	   }
-	   public static void fileupload(String fpath) throws AWTException
+	   public static void fileuploadata(String filepath) throws AWTException
 	   {
 		   
-		   StringSelection path=new StringSelection(fpath);//select
+		   StringSelection path=new StringSelection(filepath);//select
 			Toolkit.getDefaultToolkit().getSystemClipboard().setContents(path,null);
 			Robot r=new Robot();
-			r.delay(3000);
+			r.delay(5000);
 			r.keyPress(KeyEvent.VK_CONTROL);
 			r.keyPress(KeyEvent.VK_V); 
 			r.keyRelease(KeyEvent.VK_CONTROL);
