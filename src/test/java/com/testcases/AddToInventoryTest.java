@@ -31,7 +31,7 @@ public class AddToInventoryTest extends Testbase {
 		lf = new Login_functionality(driver);
 		h=new Homepage(driver);
 		i=new AddToInventoryTest();	
-		lf.Dologin();
+
 
 	}
 	@DataProvider
@@ -41,7 +41,7 @@ public class AddToInventoryTest extends Testbase {
 	@Test(dataProvider="getdata",dataProviderClass=AddToInventoryTest.class)
 	public void addProduct(String Category,String ModelNumber,String Title,String ItemDescription,String Brand,String Height,String Width,String Breadth,String Color,String InventoryStatus,String InventoryCondition,String InventoryLocation,String RDate,String ActPrice,String Mrp,String HSNcode,String RName,String PODetails,String InvoiceNo,String quantity) throws Throwable
 	{
-		
+		lf.Dologin();
 		h.inventory();
 		i.addProduct(Category,ModelNumber,Title,ItemDescription,Brand,Height,Width,Breadth,Color,InventoryStatus,InventoryCondition,InventoryLocation,RDate,ActPrice,Mrp,HSNcode,RName,PODetails,InvoiceNo,quantity);   
 		String url=driver.getCurrentUrl();

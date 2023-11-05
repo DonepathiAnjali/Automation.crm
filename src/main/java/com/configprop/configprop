@@ -5,3 +5,15 @@ url=http://empirehome.myprojectsonline.co.in/
 
 username=sureshbabuemp@gmail.com
 password=ZPMHQHIA
+
+
+Typename=user
+Typecode=333
+Changedcode=333
+
+Movefrom=Warehouse
+Moveto=Showroom
+Modelno=A333
+Quantity=02
+Note=BedroomLamp
+Notes=Lamp
