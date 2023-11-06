@@ -1,42 +1,51 @@
 package com.PageObjects;
-
-	import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
-	import org.openqa.selenium.WebElement;
-	import org.openqa.selenium.support.FindBy;
-	import org.openqa.selenium.support.PageFactory;
-
-	import com.Utils.Utils;
-	import com.base.Testbase;
-
-	public class Homepage extends Testbase{
-
-		public Homepage() throws Throwable {
-			super();
-			// TODO Auto-generated constructor stub
-		}
-		@FindBy(xpath="//i[contains(@class,'fa-houzz')]")
-		WebElement Inventory;
-		@FindBy(xpath="//ul[@class='treeview-menu']/li/a[text()='All Inventory']")
-		WebElement AllInventory;
-		@FindBy(xpath="//ul[@class='treeview-menu']/li/a[contains(text(),'Move Stock')]")
-		WebElement Movestock;
-	    public Homepage(WebDriver driver)throws Throwable
-	    {
-	    	PageFactory.initElements(driver,this);
-	    }
-	    public  AddToInventory inventory() throws Throwable
-	    {
-	    	Utils.moveToElement(Inventory);
-	    	JavascriptExecutor js = (JavascriptExecutor) driver;
-	    
-	    	js.executeScript("arguments[0].click()",AllInventory);	 
-			return  new AddToInventory();
-	    }
-	    public void movestock()
-	    {
-	    	Utils.moveToElement(Inventory);
-	    	Movestock.click();
-	    }
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import com.Utils.Utils;
+import com.base.Testbase;
+public class Homepage extends Testbase{
+	
+	public Homepage() throws Throwable {
+		
+		super();
+		// TODO Auto-generated constructor stub
 	}
-
+	@FindBy(xpath="//i[contains(@class,'fa-houzz')]")
+	WebElement Inventory;
+	
+	@FindBy(xpath="//ul[@class='treeview-menu']/li/a[text()='All Inventory']")
+	WebElement AllInventory;
+	
+	@FindBy(xpath="//ul[@class='treeview-menu']/li/a[contains(text(),'Move Stock')]")
+	WebElement Movestock;
+	
+	@FindBy(xpath="//i[contains(@class,'fa-database')]")
+	WebElement master; 
+	
+	@FindBy(xpath="//a[@href='/Master/Usertypes']")
+	WebElement usertype;
+	
+	public Homepage(WebDriver driver)throws Throwable
+    {
+    	PageFactory.initElements(driver,this);
+    }
+    public  AddToInventory inventory() throws Throwable
+    {
+    	Utils.moveToElement(Inventory);
+    	AllInventory.click();	 
+		return  new AddToInventory();
+    }
+    public void movestock()
+    {
+    	Utils.moveToElement(Inventory);
+    	Movestock.click();
+    }
+ 
+	public void usertype() {
+    	Utils.moveToElement(master);
+    	usertype.click();
+	}
+ 
+}
