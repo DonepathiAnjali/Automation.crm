@@ -1,7 +1,6 @@
 package com.PageObjects;
 
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
@@ -33,7 +32,7 @@ public class moveStock extends Testbase{
 				WebElement notes;
 				//verification
 			 
-			public moveStock(WebDriver driver)throws Throwable
+			public moveStock()throws Throwable
 			{
 				PageFactory.initElements(driver,this);
 			}
