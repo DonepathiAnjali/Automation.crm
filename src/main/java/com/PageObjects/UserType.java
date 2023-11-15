@@ -36,6 +36,11 @@ public class UserType extends Testbase {
 	{
 		PageFactory.initElements(driver,this);
 	}
+	
+	public UserType() throws Throwable {
+		super();// TODO Auto-generated constructor stub
+	}
+
 	public void adduser()
 	{
 
