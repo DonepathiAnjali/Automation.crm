@@ -1,7 +1,6 @@
-browser=edge
+browser=chrome
 
 url=http://empirehome.myprojectsonline.co.in/
-
 
 username=sureshbabuemp@gmail.com
 password=ZPMHQHIA
@@ -10,10 +9,55 @@ password=ZPMHQHIA
 Typename=user
 Typecode=333
 Changedcode=333
-
 Movefrom=Warehouse
 Moveto=Showroom
 Modelno=A333
 Quantity=02
 Note=BedroomLamp
 Notes=Lamp
+
+
+
+
+
+date=01012024
+hname=newyear
+desc=sunday
+cname=pongal
+cdate=14112023
+cdesc=wednesday
+
+
+
+
+name=anjali
+mobile=9393939393
+email=anjalid.marolix@gmail.com
+wtsappno=9393939393
+orgname=datai
+orgadd=hyderabad
+orgno=23232323
+orgemail=datai@gmail.com
+gstno=DGST12345
+changedname=anjali donepathi
+
+
+
+location=hyderabad
+clocation=ongole
+
+ 
+
+
+
+name=Anjali
+mobile=9898989898
+email=anjalidonepathi@gmail.com
+wtsappno=9898989898
+orgname=DataI
+orgadd=hyderabad
+orgno=123456789
+orgemail=dataI@gmail.com
+gstno=3DGST12345
+changedname=anjali donepathi
+
