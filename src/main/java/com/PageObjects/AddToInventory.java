@@ -113,7 +113,7 @@ public void AddProductToInventory(String Category,String ModelNumber,String Titl
 	breadth.sendKeys(Breadth);
 	color.sendKeys(Color);
 	js.executeScript("arguments[0].click()",colorI);
-	Utils.fileuploadata("C:\\Users\\pc\\Downloads\\color.jpg");
+	Utils.fileupload("C:\\Users\\pc\\Downloads\\color.jpg");
 	Utils.dropdownBy(InventoryStatus,Inventory_Status);
 	Utils.dropdownBy(InventoryCondition,Inventory_Condition);
 	Utils.dropdownBy(InventoryLocation,Inventory_Location);
@@ -127,9 +127,9 @@ public void AddProductToInventory(String Category,String ModelNumber,String Titl
 	Quantity.clear();
 	Quantity.sendKeys(quantity);
 	js.executeScript("arguments[0].click()",PMImage);
-	Utils.fileuploadata("C:\\Users\\pc\\Downloads\\lamp2.jpg");
+	Utils.fileupload("C:\\Users\\pc\\Downloads\\lamp2.jpg");
 	js.executeScript("arguments[0].click()",POImage);
-	Utils.fileuploadata("C:\\Users\\pc\\Downloads\\lamp1.jpg");
+	Utils.fileupload("C:\\Users\\pc\\Downloads\\lamp1.jpg");
 	savebtn.click();
 	}
 

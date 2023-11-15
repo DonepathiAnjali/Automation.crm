@@ -1,11 +1,28 @@
 package com.testcases;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import com.PageObjects.Customer_Details;
+import com.PageObjects.Customer_List;
 import com.PageObjects.AddDetailsofCustomer;
 import com.PageObjects.CustomerList;
+
 import com.PageObjects.Homepage;
 import com.PageObjects.Login_functionality;
 import com.base.Testbase;
+
+
+public class Customer_FunctionalityTest extends Testbase {
+
+	Login_functionality lf;
+	
+	Homepage h;
+	
+	Customer_Details c;
+	
+	Customer_List cl;
+	
+	public Customer_FunctionalityTest() throws Throwable {
+		
 
 public class Customer_FunctionalityTest extends Testbase{
 
@@ -14,16 +31,29 @@ public class Customer_FunctionalityTest extends Testbase{
 	AddDetailsofCustomer c;
 	CustomerList cl;
 	public Customer_FunctionalityTest() throws Throwable {
+
 		super();
 	}
 	@BeforeMethod
 	public void setup() throws Throwable {
 
 		Initialization();
+
+		
+		lf = new Login_functionality(driver);
+		
+		h=new Homepage(driver);
+		
+		c=new  Customer_Details(driver);
+		
+		cl=new Customer_List(driver);
+		
+
 		lf = new Login_functionality(driver);
 		h=new Homepage(driver);
 		c=new  AddDetailsofCustomer(driver);
 		cl=new CustomerList(driver);
+
 		lf.Dologin();
 	}
 	@Test(priority=1)

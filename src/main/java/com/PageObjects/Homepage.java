@@ -2,6 +2,7 @@ package com.PageObjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.html5.Location;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
@@ -26,6 +27,19 @@ public class Homepage extends Testbase{
 	//master
 	@FindBy(xpath="//i[contains(@class,'fa-database')]")
 	WebElement master; 
+
+	
+	@FindBy(xpath="//a[@href='/Master/Usertypes']")
+	WebElement usertype;
+
+	private WebElement customer;
+
+	private WebElement addcustomer;
+
+	private WebElement allcustomer;
+	
+	public Homepage(WebDriver driver)throws Throwable
+
 	//customer
 	@FindBy(xpath="//i[contains(@class,'fa-users')]")
 	WebElement customer;
@@ -43,26 +57,43 @@ public class Homepage extends Testbase{
 		WebElement holidays;
 		
     public Homepage(WebDriver driver)throws Throwable
+
     {
     	PageFactory.initElements(driver,this);
     }
     public  AddToInventory inventory() throws Throwable
     {
     	Utils.moveToElement(Inventory);
+    	
     	AllInventory.click();	 
+    	
 		return  new AddToInventory();
+		
     }
+
+    
+    public void movestock()
+    
+
     public   moveStock movestock() throws Throwable
+
     {
     	Utils.moveToElement(Inventory);
+    	
     	Movestock.click();
 		return new moveStock();
 		 
     }
  
+
+	public void usertype() {
+		
+
 	public  UserType usertype() throws Throwable {
   
+
     	Utils.moveToElement(master);
+    	
     	usertype.click();
 		return new UserType();
 	}
@@ -79,5 +110,40 @@ public class Homepage extends Testbase{
 		allcustomer.click();
 	}
 	
- 
+
+	
+	
+	public void addcustomer()
+	
+	{
+		Utils.moveToElement(customer);
+		addcustomer.click();
+	}
+	public void editcustomer()
+	{
+		Utils.moveToElement(customer);
+		allcustomer.click();
+	}
+	
+
+	
+	public  Location location() throws Throwable
+	
+	{
+		Utils.moveToElement(master);
+		
+		LocationFunctionality.click1();
+		
+		return  new Location(0, 0, 0);
+	
+	}
+	public Condition_functionality Condition ()throws Throwable
+	{
+		Utils.moveToElement(master);
+		
+		Condition_functionality.click();
+		
+		return new Condition_functionality();
+  }
+	
 }
