@@ -27,19 +27,6 @@ public class Homepage extends Testbase{
 	//master
 	@FindBy(xpath="//i[contains(@class,'fa-database')]")
 	WebElement master; 
-
-	
-	@FindBy(xpath="//a[@href='/Master/Usertypes']")
-	WebElement usertype;
-
-	private WebElement customer;
-
-	private WebElement addcustomer;
-
-	private WebElement allcustomer;
-	
-	public Homepage(WebDriver driver)throws Throwable
-
 	//customer
 	@FindBy(xpath="//i[contains(@class,'fa-users')]")
 	WebElement customer;
@@ -55,50 +42,46 @@ public class Homepage extends Testbase{
 	//holiday
 		@FindBy(linkText="Holidays")
 		WebElement holidays;
-		
+	//location
+		@FindBy(xpath="//a[text()='Location ']")
+		WebElement location;
+	//condition
+		@FindBy(xpath="//a[text()='Condition']")
+		WebElement condition;
     public Homepage(WebDriver driver)throws Throwable
-
     {
     	PageFactory.initElements(driver,this);
     }
     public  AddToInventory inventory() throws Throwable
     {
     	Utils.moveToElement(Inventory);
-    	
     	AllInventory.click();	 
-    	
 		return  new AddToInventory();
-		
     }
-
-    
-    public void movestock()
-    
-
     public   moveStock movestock() throws Throwable
-
     {
     	Utils.moveToElement(Inventory);
-    	
     	Movestock.click();
 		return new moveStock();
 		 
     }
  
-
-	public void usertype() {
-		
-
 	public  UserType usertype() throws Throwable {
+ 
+ 
   
-
     	Utils.moveToElement(master);
-    	
     	usertype.click();
 		return new UserType();
 	}
  
-	
+	public Holidays_Functionality holidays() throws Throwable
+	{
+		Utils.moveToElement(master);
+		holidays.click();
+		return new Holidays_Functionality();
+		
+	}
 	public void addcustomer()
 	{
 		Utils.moveToElement(customer);
@@ -109,41 +92,17 @@ public class Homepage extends Testbase{
 		Utils.moveToElement(customer);
 		allcustomer.click();
 	}
-	
-
-	
-	
-	public void addcustomer()
-	
-	{
-		Utils.moveToElement(customer);
-		addcustomer.click();
-	}
-	public void editcustomer()
-	{
-		Utils.moveToElement(customer);
-		allcustomer.click();
-	}
-	
-
-	
 	public  Location location() throws Throwable
-	
 	{
 		Utils.moveToElement(master);
-		
-		LocationFunctionality.click1();
-		
+		location.click();
 		return  new Location(0, 0, 0);
-	
 	}
-	public Condition_functionality Condition ()throws Throwable
+ 
+	public ConditiontypeData Condition()throws Throwable
 	{
 		Utils.moveToElement(master);
-		
-		Condition_functionality.click();
-		
-		return new Condition_functionality();
+		condition.click();
+		return new ConditiontypeData();
   }
-	
 }
