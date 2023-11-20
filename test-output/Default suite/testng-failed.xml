@@ -3,27 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-
-      <class name="com.testcases.LocationFunctionalityTest">
-        <methods>
-          <include name="verify"/>
-          <include name="setup"/>
-          <include name="addlocation"/>
-          <include name="deletecustomer"/>
-          <include name="editcustomer"/>
-        </methods>
-      </class> <!-- com.testcases.LocationFunctionalityTest -->
-
-      <class name="com.testcases.Customer_FunctionalityTest">
+      <class name="com.testcases.CustomerTest">
         <methods>
           <include name="editcustomer"/>
-          <include name="deletecustomer"/>
           <include name="verify"/>
           <include name="setup"/>
-          <include name="addcustomer"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- com.testcases.Customer_FunctionalityTest -->
-
+      </class> <!-- com.testcases.CustomerTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

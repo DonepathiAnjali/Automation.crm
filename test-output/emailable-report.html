@@ -9,11 +9,43 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Suite</th></tr>
-<tr><td><a href="#t0">Test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">19,262</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Test</a></td><td class="num">9</td><td class="num">0</td><td class="num">0</td><td class="num attn">2</td><td class="num">102,057</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.testcases.UserTypeTest</td><td><a href="#m0">adduser</a></td><td rowspan="1">1700453965513</td><td rowspan="1">5009</td></tr><tr class="passedeven"><td><a href="#m1">edituser</a></td><td rowspan="1">1700453972548</td><td rowspan="1">9344</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.testcases.CustomerTest</td><td><a href="#m0">editcustomer</a></td><td rowspan="1">1700480649265</td><td rowspan="1">4016</td></tr><tr class="failedeven"><td><a href="#m1">verify</a></td><td rowspan="1">1700480663017</td><td rowspan="1">2934</td></tr><tr><th colspan="4">Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.testcases.CustomerTest</td><td><a href="#m2">addcustomer</a></td><td rowspan="1">1700480640176</td><td rowspan="1">5364</td></tr><tr class="passedeven"><td><a href="#m3">deletecustomer</a></td><td rowspan="1">1700480656571</td><td rowspan="1">3005</td></tr><tr class="passedodd"><td rowspan="1">com.testcases.Holidays_Test</td><td><a href="#m4">validateaddnew</a></td><td rowspan="1">1700480636928</td><td rowspan="1">4</td></tr><tr class="passedeven"><td rowspan="4">com.testcases.LocationFunctionalityTest</td><td><a href="#m5">addlocation</a></td><td rowspan="1">1700480672928</td><td rowspan="1">3240</td></tr><tr class="passedeven"><td><a href="#m6">deletecustomer</a></td><td rowspan="1">1700480686592</td><td rowspan="1">2688</td></tr><tr class="passedeven"><td><a href="#m7">editcustomer</a></td><td rowspan="1">1700480679471</td><td rowspan="1">3613</td></tr><tr class="passedeven"><td><a href="#m8">verify</a></td><td rowspan="1">1700480694503</td><td rowspan="1">2671</td></tr><tr class="passedodd"><td rowspan="2">com.testcases.UserTypeTest</td><td><a href="#m9">adduser</a></td><td rowspan="1">1700480710924</td><td rowspan="1">6675</td></tr><tr class="passedodd"><td><a href="#m10">edituser</a></td><td rowspan="1">1700480724381</td><td rowspan="1">9902</td></tr></tbody>
 </table>
-<h2>Test</h2><h3 id="m0">com.testcases.UserTypeTest#adduser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">com.testcases.UserTypeTest#edituser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Test</h2><h3 id="m0">com.testcases.CustomerTest#editcustomer</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+  (Session info: chrome=119.0.6045.160)
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;ANJALI&apos;, ip: &apos;192.168.1.5&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\pc\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53413}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ec76f8525690e60841e74bfaa197882b
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+	at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:160)
+	at com.PageObjects.CustomerList.editcustomer(CustomerList.java:53)
+	at com.testcases.CustomerTest.editcustomer(CustomerTest.java:42)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.testcases.CustomerTest#verify</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [No matching records found] but found [219]
+	at com.PageObjects.CustomerList.verification(CustomerList.java:89)
+	at com.testcases.CustomerTest.verify(CustomerTest.java:54)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.testcases.CustomerTest#addcustomer</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.testcases.CustomerTest#deletecustomer</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.testcases.Holidays_Test#validateaddnew</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.testcases.LocationFunctionalityTest#addlocation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.testcases.LocationFunctionalityTest#deletecustomer</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.testcases.LocationFunctionalityTest#editcustomer</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.testcases.LocationFunctionalityTest#verify</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.testcases.UserTypeTest#adduser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">com.testcases.UserTypeTest#edituser</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

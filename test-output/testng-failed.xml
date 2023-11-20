@@ -6,14 +6,14 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.testcases.LoginTest">
+      <class name="com.testcases.CustomerTest">
         <methods>
-          <include name="verifyloginwithExcel" invocation-numbers="0 1 2 3"/>
-          <include name="teardown"/>
+          <include name="editcustomer"/>
+          <include name="verify"/>
           <include name="setup"/>
-          <include name="Verifylogin"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- com.testcases.LoginTest -->
+      </class> <!-- com.testcases.CustomerTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -5,7 +5,10 @@
 		<listener class-name="com.reports.ExtentReporterNG"></listener>
 	</listeners>  <test thread-count="5" name="Test">
     <classes>
-      
+     
+      <class name="com.testcases.Holidays_Test"/>
+      <class name="com.testcases.CustomerTest"/>
+      <class name="com.testcases.LocationFunctionalityTest"/>
       <class name="com.testcases.UserTypeTest"/>
     </classes>
   </test> <!-- Test -->
