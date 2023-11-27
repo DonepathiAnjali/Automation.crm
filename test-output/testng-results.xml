@@ -1,49 +1,144 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="11" passed="9" failed="2" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-11-20T17:13:52 IST" name="Suite" finished-at="2023-11-20T17:15:34 IST" duration-ms="102057">
+  <suite started-at="2023-11-22T15:16:05 IST" name="Default suite" finished-at="2023-11-22T15:16:25 IST" duration-ms="20493">
     <groups>
     </groups>
-    <test started-at="2023-11-20T17:13:52 IST" name="Test" finished-at="2023-11-20T17:15:34 IST" duration-ms="102057">
-      <class name="com.testcases.CustomerTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testcases.CustomerTest@57cf54e1]" started-at="2023-11-20T17:13:56 IST" name="setup" finished-at="2023-11-20T17:14:00 IST" duration-ms="3235" status="PASS">
+    <test started-at="2023-11-22T15:16:05 IST" name="Default test" finished-at="2023-11-22T15:16:25 IST" duration-ms="20493">
+      <class name="com.testcases.AddToInventoryTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.testcases.AddToInventoryTest@3d6f0054]" started-at="2023-11-22T15:16:06 IST" name="setup" finished-at="2023-11-22T15:16:08 IST" duration-ms="2610" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="addcustomer()[pri:1, instance:com.testcases.CustomerTest@57cf54e1]" started-at="2023-11-20T17:14:00 IST" name="addcustomer" finished-at="2023-11-20T17:14:05 IST" duration-ms="5364" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addcustomer -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.testcases.CustomerTest@57cf54e1]" started-at="2023-11-20T17:14:05 IST" name="teardown" finished-at="2023-11-20T17:14:05 IST" duration-ms="202" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testcases.CustomerTest@57cf54e1]" started-at="2023-11-20T17:14:05 IST" name="setup" finished-at="2023-11-20T17:14:09 IST" duration-ms="3522" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="editcustomer()[pri:2, instance:com.testcases.CustomerTest@57cf54e1]" started-at="2023-11-20T17:14:09 IST" name="editcustomer" finished-at="2023-11-20T17:14:13 IST" duration-ms="4016" status="FAIL">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
+        <test-method signature="addProduct(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.testcases.AddToInventoryTest@3d6f0054]" started-at="2023-11-22T15:16:08 IST" name="addProduct" data-provider="getdata" finished-at="2023-11-22T15:16:25 IST" duration-ms="17026" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Bedroom]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[A333]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Lamp]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Bedroom table lamp]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Home sake]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[38cm]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[20cm]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[18cm]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[Multi]]>
+              </value>
+            </param>
+            <param index="9">
+              <value>
+                <![CDATA[In Stock]]>
+              </value>
+            </param>
+            <param index="10">
+              <value>
+                <![CDATA[Excellent]]>
+              </value>
+            </param>
+            <param index="11">
+              <value>
+                <![CDATA[Noida]]>
+              </value>
+            </param>
+            <param index="12">
+              <value>
+                <![CDATA[27-04-22]]>
+              </value>
+            </param>
+            <param index="13">
+              <value>
+                <![CDATA[3000]]>
+              </value>
+            </param>
+            <param index="14">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="15">
+              <value>
+                <![CDATA[B09Z2Y9SR7]]>
+              </value>
+            </param>
+            <param index="16">
+              <value>
+                <![CDATA[Homesake]]>
+              </value>
+            </param>
+            <param index="17">
+              <value>
+                <![CDATA[Homesake, Inovation 
+handart Pvt. Ltd, Noida, 
+Customer Care - 0120-4206972
+
+
+
+
+]]>
+              </value>
+            </param>
+            <param index="18">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="19">
+              <value>
+                <![CDATA[30]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.ElementNotInteractableException">
             <message>
-              <![CDATA[stale element reference: stale element not found
+              <![CDATA[element not interactable
   (Session info: chrome=119.0.6045.160)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'ANJALI', ip: '192.168.1.5', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+System info: host: 'ANJALI', ip: '192.168.0.155', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\pc\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53413}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ec76f8525690e60841e74bfaa197882b]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\pc\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57725}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f809a669319e90fc1235ec6c0ddea323]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: stale element reference: stale element not found
+              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=119.0.6045.160)
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/stale_element_reference.html
 Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'ANJALI', ip: '192.168.1.5', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
+System info: host: 'ANJALI', ip: '192.168.0.155', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.9'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\pc\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53413}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: ec76f8525690e60841e74bfaa197882b
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 119.0.6045.160, chrome: {chromedriverVersion: 119.0.6045.105 (38c72552c5e..., userDataDir: C:\Users\pc\AppData\Local\T...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57725}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f809a669319e90fc1235ec6c0ddea323
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -56,9 +151,15 @@ at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.ja
 at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
-at org.openqa.selenium.remote.RemoteWebElement.getText(RemoteWebElement.java:160)
-at com.PageObjects.CustomerList.editcustomer(CustomerList.java:53)
-at com.testcases.CustomerTest.editcustomer(CustomerTest.java:42)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+at com.PageObjects.Homepage.inventory(Homepage.java:56)
+at com.testcases.AddToInventoryTest.addProduct(AddToInventoryTest.java:58)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -89,146 +190,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
+          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- editcustomer -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.testcases.CustomerTest@57cf54e1]" started-at="2023-11-20T17:14:13 IST" name="teardown" finished-at="2023-11-20T17:14:13 IST" duration-ms="212" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testcases.CustomerTest@57cf54e1]" started-at="2023-11-20T17:14:13 IST" name="setup" finished-at="2023-11-20T17:14:16 IST" duration-ms="3071" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="deletecustomer()[pri:3, instance:com.testcases.CustomerTest@57cf54e1]" started-at="2023-11-20T17:14:16 IST" name="deletecustomer" finished-at="2023-11-20T17:14:19 IST" duration-ms="3005" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deletecustomer -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.testcases.CustomerTest@57cf54e1]" started-at="2023-11-20T17:14:19 IST" name="teardown" finished-at="2023-11-20T17:14:19 IST" duration-ms="206" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testcases.CustomerTest@57cf54e1]" started-at="2023-11-20T17:14:19 IST" name="setup" finished-at="2023-11-20T17:14:23 IST" duration-ms="3235" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verify()[pri:4, instance:com.testcases.CustomerTest@57cf54e1]" started-at="2023-11-20T17:14:23 IST" name="verify" finished-at="2023-11-20T17:14:25 IST" duration-ms="2934" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [No matching records found] but found [219]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [No matching records found] but found [219]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at org.testng.Assert.assertEquals(Assert.java:639)
-at com.PageObjects.CustomerList.verification(CustomerList.java:89)
-at com.testcases.CustomerTest.verify(CustomerTest.java:54)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.testcases.CustomerTest@57cf54e1]" started-at="2023-11-20T17:14:25 IST" name="teardown" finished-at="2023-11-20T17:14:26 IST" duration-ms="181" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.testcases.CustomerTest -->
-      <class name="com.testcases.Holidays_Test">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testcases.Holidays_Test@3bf9ce3e]" started-at="2023-11-20T17:13:52 IST" name="setup" finished-at="2023-11-20T17:13:56 IST" duration-ms="4647" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="validateaddnew()[pri:0, instance:com.testcases.Holidays_Test@3bf9ce3e]" started-at="2023-11-20T17:13:56 IST" name="validateaddnew" finished-at="2023-11-20T17:13:56 IST" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- validateaddnew -->
-      </class> <!-- com.testcases.Holidays_Test -->
-      <class name="com.testcases.LocationFunctionalityTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testcases.LocationFunctionalityTest@434a63ab]" started-at="2023-11-20T17:14:26 IST" name="setup" finished-at="2023-11-20T17:14:32 IST" duration-ms="6796" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="addlocation()[pri:1, instance:com.testcases.LocationFunctionalityTest@434a63ab]" started-at="2023-11-20T17:14:32 IST" name="addlocation" finished-at="2023-11-20T17:14:36 IST" duration-ms="3240" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- addlocation -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testcases.LocationFunctionalityTest@434a63ab]" started-at="2023-11-20T17:14:36 IST" name="setup" finished-at="2023-11-20T17:14:39 IST" duration-ms="3302" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="editcustomer()[pri:2, instance:com.testcases.LocationFunctionalityTest@434a63ab]" started-at="2023-11-20T17:14:39 IST" name="editcustomer" finished-at="2023-11-20T17:14:43 IST" duration-ms="3613" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- editcustomer -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testcases.LocationFunctionalityTest@434a63ab]" started-at="2023-11-20T17:14:43 IST" name="setup" finished-at="2023-11-20T17:14:46 IST" duration-ms="3506" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="deletecustomer()[pri:3, instance:com.testcases.LocationFunctionalityTest@434a63ab]" started-at="2023-11-20T17:14:46 IST" name="deletecustomer" finished-at="2023-11-20T17:14:49 IST" duration-ms="2688" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deletecustomer -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testcases.LocationFunctionalityTest@434a63ab]" started-at="2023-11-20T17:14:49 IST" name="setup" finished-at="2023-11-20T17:14:54 IST" duration-ms="5223" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verify()[pri:4, instance:com.testcases.LocationFunctionalityTest@434a63ab]" started-at="2023-11-20T17:14:54 IST" name="verify" finished-at="2023-11-20T17:14:57 IST" duration-ms="2671" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verify -->
-      </class> <!-- com.testcases.LocationFunctionalityTest -->
-      <class name="com.testcases.UserTypeTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testcases.UserTypeTest@6e0f5f7f]" started-at="2023-11-20T17:14:57 IST" name="setup" finished-at="2023-11-20T17:15:10 IST" duration-ms="13747" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="adduser()[pri:1, instance:com.testcases.UserTypeTest@6e0f5f7f]" started-at="2023-11-20T17:15:10 IST" name="adduser" finished-at="2023-11-20T17:15:17 IST" duration-ms="6675" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- adduser -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.testcases.UserTypeTest@6e0f5f7f]" started-at="2023-11-20T17:15:17 IST" name="setup" finished-at="2023-11-20T17:15:24 IST" duration-ms="6779" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="edituser()[pri:2, instance:com.testcases.UserTypeTest@6e0f5f7f]" started-at="2023-11-20T17:15:24 IST" name="edituser" finished-at="2023-11-20T17:15:34 IST" duration-ms="9902" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- edituser -->
-      </class> <!-- com.testcases.UserTypeTest -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- addProduct -->
+      </class> <!-- com.testcases.AddToInventoryTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
