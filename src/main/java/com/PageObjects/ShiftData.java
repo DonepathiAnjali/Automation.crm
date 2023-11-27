@@ -47,17 +47,10 @@ package com.PageObjects;
 			// TODO Auto-generated method stub
 			
 		}
-		public void verify() {
-			// TODO Auto-generated method stub
-			
 		
-	}
-		public void verify1() {
-			// TODO Auto-generated method stub
-			
-		}
 		public void verify() {
 			// TODO Auto-generated method stub
 			
 		}
 
+}
