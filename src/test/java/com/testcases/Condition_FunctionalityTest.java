@@ -12,32 +12,52 @@ import com.Utils.Utils;
 import com.base.Testbase;
 
 public class Condition_FunctionalityTest extends Testbase{
+
 	private String sheetname="AddCondition";
+
 	private String sheetname2="EditCondition";
+
 	private String sheetname3="DeleteCondition";
+
 	public Condition_FunctionalityTest() throws Throwable {
+
 		super();
 	}
+
 	Login_functionality lf;
+
 	Homepage h;
+
 	Condition_functionality c;
+
 	ConditiontypeData ctd;
+
 	@BeforeMethod
 	public void setup() throws Throwable
+
 	{
 		Initialization();
+
 		lf=new Login_functionality(driver);
+
 		h=new Homepage(driver);
+
 		c=new Condition_functionality(driver);
+
 		ctd=new ConditiontypeData(driver);
+
 		lf.Dologin();
 	}
 	@Test(priority=1,dataProvider="readdata",dataProviderClass=Condition_FunctionalityTest.class)
+
 	public void addCondition(String conditionname) throws Throwable
 	{
 		h.Condition();
+
 		c.addCondition();
+
 		ctd.addCondition(conditionname);
+
 	}
 	@DataProvider
 	public Object[][] readdata() throws IOException
@@ -62,6 +82,7 @@ public class Condition_FunctionalityTest extends Testbase{
 	public void deleteCondition(String Changedcondition) throws Throwable
 	{
 		h.Condition();
+
 		c.deleteCondition(Changedcondition);
 	}
 	@DataProvider
@@ -71,9 +92,11 @@ public class Condition_FunctionalityTest extends Testbase{
 
 	}
 	@Test(priority=4,dataProvider="readdataExcelcondition",dataProviderClass=Condition_FunctionalityTest.class)
+
 	public void verify(String changedcondition) throws Throwable
 	{
 		h.Condition();
+
 		c.verify(changedcondition);
 	}
 

@@ -63,6 +63,7 @@ public class Shifts_FunctionalityTest extends Testbase{
 		
 		s.verify();
 	}
+	
 	@AfterMethod
 	public void teardown()
 	{

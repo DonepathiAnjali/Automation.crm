@@ -1,65 +1,89 @@
 package com.PageObjects;
 
+import java.util.List;
 
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
-	import java.util.List;
+import com.Utils.Utils;
+import com.base.Testbase;
 
-	import org.openqa.selenium.JavascriptExecutor;
-	import org.openqa.selenium.WebDriver;
-	import org.openqa.selenium.WebElement;
-	import org.openqa.selenium.support.FindBy;
-	import org.openqa.selenium.support.PageFactory;
-	import org.testng.Assert;
+public class Shifts_Functionality extends Testbase {
 
-	import com.Utils.Utils;
-	import com.base.Testbase;
+	//addnew
+	@FindBy(xpath="//i[contains(@class,'fa-plus')]")
+	WebElement addnew;
 
-	public class Shifts_Functionality extends Testbase {
-	    //addnew
-		@FindBy(xpath="//i[contains(@class,'fa-plus')]")
-		WebElement addnew;
-		//search
-		@FindBy(xpath="//input[contains(@class,'form-control-sm')]")
-		WebElement search;
-		//delete
-		@FindBy(xpath="//button[contains(@class,'btn-danger')]")
-		WebElement Delete;
-		//yes
-		@FindBy(xpath="//button[text()='Yes']")
-		WebElement yes;
-		//table
-		 @FindBy(xpath="//table[contains(@class,'dataTable')]/tbody/tr/td")
-		    List<WebElement> table;
+	//search
+	@FindBy(xpath="//input[contains(@class,'form-control-sm')]")
+	WebElement search;
+
+	//delete
+	@FindBy(xpath="//button[contains(@class,'btn-danger')]")
+	WebElement Delete;
+
+	//yes
+	@FindBy(xpath="//button[text()='Yes']")
+	WebElement yes;
+
+	//table
+	@FindBy(xpath="//table[contains(@class,'dataTable')]/tbody/tr/td")
+
+	List<WebElement> table;
+
 	public Shifts_Functionality() throws Throwable {
-			super();
-		}
+
+		super();
+	}
 
 	public Shifts_Functionality(WebDriver driver) throws Throwable{
-		 PageFactory.initElements(driver,this);
+
+		PageFactory.initElements(driver,this);
+
 	}
+
 	public  Shifts_Functionality addShift() throws Throwable
+
 	{
-		 Utils.javaScriptClick(addnew);
+		Utils.javaScriptClick(addnew);
+
 		return new Shifts_Functionality();
+
 	}
+
 	public Shifts_Functionality deleteShift() throws Throwable
+
 	{
 		search.sendKeys(props.getProperty("shiftname"));
+
 		Delete.click();
+
 		yes.click();
+
 		return new Shifts_Functionality();
-		
+
 	}
 	public Shifts_Functionality verify() throws Throwable
+
 	{
 		search.sendKeys(props.getProperty("shiftname"));
+
 		for(WebElement row:table)
+
 		{
 			String text=row.getText();
+
 			Assert.assertEquals(text,"No matching records found");
+
 		}
+
 		return new Shifts_Functionality();
-		
+
 	}
-	}
+
+}
 
