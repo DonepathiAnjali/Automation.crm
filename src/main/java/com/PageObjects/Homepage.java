@@ -134,4 +134,13 @@ public class Homepage extends Testbase{
 		return new ShiftData();
 		
 	}
-}
+	public CompanyData company1() throws Throwable
+	{
+		Utils.moveToElement(master);
+		CompanyData.click();
+		return new CompanyData();
+  }
+	public void company() {
+		// TODO Auto-generated method stub
+		
+	}}

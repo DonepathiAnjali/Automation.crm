@@ -53,5 +53,10 @@ public class CompanyData extends Testbase
 
 	}
 
+	public static void click() {
+		// TODO Auto-generated method stub
+		
+	}
+
 }
 
